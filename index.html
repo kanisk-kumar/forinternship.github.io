@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://kit.fontawesome.com/b909dedfba.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+     <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">  
+    <title>Ferofly-Magnify your Journey</title>
+
+    <!--internal css-->
+    <style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+}
+      html{
+        scroll-behavior: smooth;
+      }
+      .jumbotron{
+        background-image: url(image/j1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        max-width: 100vw;
+      }
+
+      form{
+        margin-left: 300px;
+        margin-bottom: 100px;
+      }
+
+      .navbar{
+        border-top: solid purple 2px;
+      }
+
+      .navbar-brand{
+        border:solid white 1px !important;
+        padding: 10px;
+      }
+
+      .navbar-brand:hover{
+        cursor: pointer;
+        border:white solid 1px;
+        color: black !important;
+        background-color: white;
+      }
+
+      .about2{
+        background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)) ,url(image/j1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 70vh;
+        max-width: 50vw;
+        display: grid;
+        place-items : center;
+
+      }
+
+      .about-para{
+        font-size: 0.875em; /* 14px/16=0.875em */
+      }
+
+      .gallery-image{
+        height: 100vh;
+        width: 100vw; 
+        transform: scale(0.95);
+        transition: transform 0.7s , opacity 0.7s;
+        overflow: hidden;
+      }
+
+      .gallery-image:hover{
+        cursor: pointer;
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      .guest-review{
+        background-image: url(image/j1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 80vh;
+        max-width: 50vw;
+        display: grid;
+        place-items : center; 
+      }
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+  color: white;
+}
+
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.form-button{
+  padding-right:    250px;
+  padding-left:     250px;
+
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+
+}     
+
+.about-para{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+}
+.booking-form{
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.favicon{
+  margin: auto;
+}
+
+.carousel{
+  max-width: 90vh;
+  max-height: 90vh;
+}
+
+
+.customer{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(image/j1.jpg);
+  height: 80vh;
+  width: 50%;
+  display: grid;
+  place-items : center;
+}
+
+  .embed-responsive {
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+      }
+@media only screen and (max-width: 1024px){
+      form{
+        margin-left: 200px;
+      }
+
+      .booking-form{
+          margin: auto;
+}
+
+      .jumbotron{
+        background-image: url(image/j1.jpg);
+        background-repeat: repeat;
+        background-attachment: fixed;
+        height: 50vh;
+        max-width: 100vw;
+      }
+
+      .about2{
+        background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)) ,url(image/j1.jpg);
+        background-repeat: repeat;
+        background-attachment: fixed;
+        height: 50vh;
+        max-width: 100vw;
+        display: grid;
+        place-items : center;
+
+      }
+
+      .gallery-image{
+        height: 50vh;
+        width: 100vw; 
+        transform: scale(0.95);
+        transition: transform 0.7s , opacity 0.7s;
+        overflow: hidden;
+      }
+
+      .form-button{
+        padding:20px; 
+        }
+
+      .about-para{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+}
+
+      .customer{
+          height: 70vh;
+          width: 100vw;
+          margin: auto;   
+        }
+
+      .carousel{
+        max-width: 50vh;
+        max-height: 50vh;
+        margin: auto;
+}
+
+      @media only screen and (max-width: 600px){
+        .icon-bar {
+          position: fixed;
+          right: 2%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+        .customer{
+          height: 100vh;
+          width: 100vw;
+          margin: auto;   
+        }
+
+        .carousel{
+        max-width: 50vh;
+        max-height: 50vh;
+        margin: auto;
+}
+        .about2{
+        background-image: url(image/j1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        max-width: 100vw;
+        display: grid;
+        place-items : center; 
+      }
+
+      .booking-form{
+        margin: auto;
+}
+
+      .about-para{
+        margin: auto;
+}
+      form{
+        margin: auto;
+      }
+      ul li a{
+        text-align: center !important;
+      }
+
+      .guest-review{
+        background-image: url(image/j1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        max-width: 100vw;
+        display: grid;
+        place-items : center; 
+      }
+
+      .form-button{
+        padding: 20px;
+      }
+
+      .booking-form{
+        margin:40px;
+      }
+
+      }
+    </style>
+      </head>
+  <body>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-center active" aria-current="page" href="#">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-center mx-4" href="#">about</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-center mx-4" href="#">rooms</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-center mx-4" href="#">services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-center mx-4" href="#">gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-center mx-4" href="#">see&do</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-center mx-4" href="#">contact</a>
+        </li>
+  </div>
+        <a class="navbar-brand mx-4" href="#">Book a Table</a>
+</nav>
+
+<br>
+<!--brand name-->
+<section>
+  <div class="container">
+    <h1 class="display-5 text-center mt-5 main_heading"><em><strong>Ferofly</strong></em></h1>
+    <p class="text-muted text-center mb-5"><em> &mdash; Magnify your Journey &mdash;</em></p>    
+  </div> 
+</section>
+
+<!--jumbotron-->
+ <div class="container">
+   <div class="jumbotron" id="home">
+     
+   </div>
+ </div>
+ <br>
+
+<!--form-->
+<div class="container">
+  <form class="booking-form">
+
+<label for="birthday" class="m-2" >CheckIn</label>
+<input type="date" id="birthday" name="birthday">
+  
+<label for="birthday" class="m-2">CheckOut</label>
+<input type="date" id="birthday" name="birthday">
+
+  <label for="exampleFormControlSelect1" class="m-2">adult's</label>
+  <select class="" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+  </select>
+
+  <label for="exampleFormControlSelect1" class="m-2">kid's</label>
+    <select class="" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+   <button type="submit" class="btn btn-dark m-3 px-5">search</button>
+</form>    
+  </div>
+</div>
+  
+  
+</div>  
+<!--about-->
+  <section class="main_heading my-5" id="about">
+  <div class="container mx-auto">
+    <h3 class="text-center text-uppercase mb-5">About</h3>
+    <p class="text-center text-muted about-para">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="about2 mx-auto">
+      <div class="card about-card text-center" style="width: 18rem;">
+      <div class="card-body">
+    <h5 class="card-title text-center my-3">OUR ROOMS</h5>
+    <p class="card-text text-center mx-5">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+    <button type="button" class="card-button btn btn-outline-dark ">Book a Room</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<!--social media bar-->
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<!--our services-->
+  <section class="main_heading my-5" id="about">
+  <div class="container mx-auto">
+    <h3 class="text-center text-uppercase mb-5 ">OUR SERVICES</h3>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+          <h5 class="text-center"><i class="fas fa-hamburger fa-lg"></i><br>Breakfast</h5>
+          <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
+    </div>
+
+    <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+          <h5 class="text-center"><i class="fab fa-pagelines fa-lg"></i><br>Garden</h5>
+          <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
+    </div>
+
+        <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+          
+          <h5 class="text-center"><i class="fas fa-swimming-pool fa-lg"></i><br>Pool</h5>
+          <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
+    </div>
+
+        <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+          
+          <h5 class="text-center"><i class="fas fa-wifi fa-lg"></i><br>Free WiFi</h5>
+          <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
+    </div>
+  
+
+    <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+    
+          <h5 class="text-center"><i class="fas fa-broom fa-lg"></i><br>Daily Housekeeping</h5>
+          <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
+    </div>
+
+        <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+    
+          <h5 class="text-center"><i class="fas fa-utensils fa-lg"></i><br>In-Room Dining Service</h5>
+          <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
+    </div>
+
+        
+  </div>
+</div>
+
+<!--gallery-->
+<section>
+  <h3 class="text-center text-uppercase my-5">gallery</h3>
+</section>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-12 col-md-4 col-xl-4 col-xxl-4">
+      <figure>
+        <img src="image/g1.jpg" class="img-fluid gallery-image">
+      </figure>    
+    </div>
+
+    <div class="col-12 col-md-4 col-xl-4 col-xxl-4">
+      <figure>
+        <img src="image/g2.jpg" class="img-fluid gallery-image">
+      </figure>    
+    </div>
+
+    <div class="col-12 col-md-4 col-xl-4 col-xxl-4">
+      <figure>
+        <img src="image/g3.jpg" class="img-fluid gallery-image">
+      </figure>    
+    </div>
+  
+  </div>
+</div>
+
+<!--things to do-->
+<section>
+  <h3 class="text-center text-uppercase my-5">things to do</h3>
+</section>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+          <h5 class="text-center mb-3">Wineries Tour</h5>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+    </div>
+
+    <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+          <h5 class="text-center mb-3">Cultural Sites</h5>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>     
+    </div>
+
+    <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+          <h5 class="text-center mb-3">Market Tour </h5>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+
+    </div>
+
+    <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+          <h5 class="text-center mb-3">Wineries Tour</h5>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+    </div>
+
+    <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+          <h5 class="text-center mb-3">Leisure Activities</h5>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+    </div>
+
+    <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+          <h5 class="text-center mb-3">Birds Safari</h5>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+    </div>
+  
+  </div>
+</div>
+<br>
+
+<!--card carousel-->
+<div class="container my-5 customer">
+  <div class="feedback">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <span><img src="image/c.png"style="height: 20px"></span>
+    <h5 class="card-title text-center">Guest rivew</h5>
+    
+    <p class="card-text text-center my-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <span><img src="image/c.png"style="height: 20px"></span>
+    <h5 class="card-title text-center">Guest Rivew</h5>
+    
+    <p class="card-text text-center my-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <span><img src="image/c.png"style="height: 20px"></span>
+    <h5 class="card-title text-center">Guest Rivew</h5>
+    
+    <p class="card-text text-center  my-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+  </div>
+</div>
+<br>
+<!--contact us-->
+<section class="bg-light">
+  <br>
+  <h3 class="text-uppercase text-center my-5">contact us</h3>
+  <p class="text-muted text-center">info@mysite.com <span class="mx-2">/</span> 500 Terry Francois Street, San Francisco, CA 94158 <span class="mx-2">/</span> Tel: 123-456-7890</p>
+
+<div class=" container">
+  <form class="">
+    <div class="row gx-3 ">
+      <div class="col-sm-4 my-3">
+        <input type="text" class="form-control" placeholder="Name*" aria-label="City">
+      </div>
+      <div class="col-sm-4 my-3">
+        <input type="text" class="form-control" placeholder="Email*" aria-label="State">
+      </div>
+      <div class="form-floating col-sm-8 my-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Message</label>
+      </div>
+      <div>
+      <button type="submit" class="btn btn-dark form-button" >Send</button>
+      </div>
+    </div>
+  </form>
+</div>
+<br>
+</section>
+<!--map-->
+<div class="embed-responsive embed-responsive-100x400px">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d35818.719732048536!2d-4.25169!3d55.868392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488815562056ceeb%3A0x71e683b805ef511e!2sGlasgow%2C+Glasgow+City%2C+UK!5e0!3m2!1sen!2sus!4v1448625188752"width="100%" height="100%"  frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<footer class="bg-dark text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>  
+    <script src="https://use.fontawesome.com/b7bf328542.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
