@@ -369,36 +369,48 @@
  </div>
  <br>
 
+
 <!--form-->
 <div class="container">
-  <form class="booking-form">
-
-<label for="birthday" class="m-2" >CheckIn</label>
-<input type="date" id="birthday" name="birthday">
+    <form class="row align-items-center booking-form">
   
-<label for="birthday" class="m-2">CheckOut</label>
-<input type="date" id="birthday" name="birthday">
-
-  <label for="exampleFormControlSelect1" class="m-2">adult's</label>
-  <select class="form-select" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-  </select>
-
-  <label for="exampleFormControlSelect1" class="m-2">kid's</label>
-    <select class="form-select" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-   <button type="submit" class="btn btn-dark m-3 px-5">search</button>
-</form>    
+  <div class="col-auto mx-4">
+    <label class="" for="autoSizingInput">CheckIn</label>
+    <input type="date" class="form-control" id="autoSizingInput" placeholder="">
   </div>
+  
+  <div class="col-auto mx-4">
+    <label class="" for="autoSizingInputGroup">CheckOut</label>
+    <div class="input-group">
+      <div class="input-group"></div>
+      <input type="date" class="form-control" id="autoSizingInputGroup" placeholder="">
+    </div>
+  </div>
+
+  <div class="col-auto mx-4">
+    <label class="" for="autoSizingSelect">adult's</label>
+    <select class="form-select" id="autoSizingSelect">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+    <div class="col-auto mx-4">
+    <label class="" for="autoSizingSelect">kids's</label>
+    <select class="form-select" id="autoSizingSelect">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="col-auto">
+    <button type="submit" class="btn btn-dark p-2"style="margin-top:  15px;    ">Submit</button>
+  </div>
+</form>
 </div>
   
   
