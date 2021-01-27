@@ -12,6 +12,12 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <!--Animate on Scroll-->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
      <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">  
     <title>Ferofly-Magnify your Journey</title>
@@ -161,10 +167,7 @@
   margin-bottom: 100px;
 }
 .booking-form{
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin: auto;
 }
 
 .favicon{
@@ -214,7 +217,6 @@
         height: 50vh;
         max-width: 100vw;
         display: grid;
-        place-items : center;
 
       }
 
@@ -297,8 +299,7 @@
         background-attachment: fixed;
         height: 100vh;
         max-width: 100vw;
-        display: grid;
-        place-items : center; 
+        display: grid; 
       }
 
       .form-button{
@@ -313,14 +314,14 @@
     </style>
       </head>
   <body>
-    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link text-center active" aria-current="page" href="#">Home</a>
         </li>
@@ -356,7 +357,7 @@
 <!--brand name-->
 <section>
   <div class="container">
-    <h1 class="display-5 text-center mt-5 main_heading"><em><strong>Ferofly</strong></em></h1>
+    <h1 class="display-5 text-center mt-5 main_heading animate__heartBeat" ><em><strong>Ferofly</strong></em></h1>
     <p class="text-muted text-center mb-5"><em> &mdash; Magnify your Journey &mdash;</em></p>    
   </div> 
 </section>
@@ -369,51 +370,47 @@
  </div>
  <br>
 
-
 <!--form-->
 <div class="container">
-    <form class="row align-items-center">
+    <form class="row align-items-center booking-form">
   
-  <div class="col-auto mx-auto">
-    <label class="" for="autoSizingInput">CheckIn</label>
-    <input type="date" class="" id="autoSizingInput" placeholder="">
+  <div class="col-auto mx-auto text-center">
+    <label class="CheckIn" for="CheckIn">CheckIn</label>
+    <input type="date" class="form-control" id="CheckIn" placeholder="">
   </div>
   
-  <div class="col-auto mx-auto">
-    <label class="" for="autoSizingInputGroup">CheckOut</label>
+  <div class="col-auto mx-auto text-center">
+    <label class="" for="CheckOut">CheckOut</label>
     <div class="input-group">
       <div class="input-group"></div>
-      <input type="date" class="" id="autoSizingInputGroup" placeholder="">
+      <input type="date" class="form-control" id="CheckOut" placeholder="">
     </div>
   </div>
 
+  <div class="col-auto mx-auto text-center">
+    <label class="" for="adult">adult's</label>
+    <select class="form-select" id="adult">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+    <div class="col-auto mx-auto text-center">
+    <label class="" for="kids">kids's</label>
+    <select class="form-select" id="kids">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
   <div class="col-auto mx-auto">
-    <label class="" for="autoSizingSelect">adult's</label>
-    <select class="form-select" id="autoSizingSelect">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-  </div>
-
-    <div class="col-auto mx-auto">
-    <label class="" for="autoSizingSelect">kids's</label>
-    <select class="form-select" id="autoSizingSelect">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-  </div>
-
-  <div class="col-auto">
-    <button type="submit" class="btn btn-dark p-2"style="margin-top:  15px;">Submit</button>
+    <button type="submit" class="btn btn-outline-dark btn-lg mt-2">Submit</button>
   </div>
 </form>
-</div>
-  
-  
 </div>  
 <!--about-->
   <section class="main_heading my-5" id="about">
@@ -453,39 +450,52 @@
   <div class="row">
     
     <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
-          <h5 class="text-center"><i class="fas fa-hamburger fa-lg"></i><br>Breakfast</h5>
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
+          <h5 class="text-center mb-3"><i class="fas fa-hamburger fa-lg"></i></h5><h5 class="text-center">Breakfast</h5>
           <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
     </div>
 
+</div>
     <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
-          <h5 class="text-center"><i class="fab fa-pagelines fa-lg"></i><br>Garden</h5>
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
+    	<h5 class="text-center mb-3"><i class="fab fa-pagelines fa-lg"></i><br></h5>
+          <h5 class="text-center">Garden</h5>
           <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
     </div>
+</div>
 
         <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
-          
-          <h5 class="text-center"><i class="fas fa-swimming-pool fa-lg"></i><br>Pool</h5>
+        	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
+          <h5 class="text-center mb-3"><i class="fas fa-swimming-pool fa-lg"></i><br></h5>
+          <h5 class="text-center">Pool</h5>
           <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
     </div>
+</div>
 
         <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
-          
-          <h5 class="text-center"><i class="fas fa-wifi fa-lg"></i><br>Free WiFi</h5>
+        	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
+          <h5 class="text-center  mb-3"><i class="fas fa-wifi fa-lg"></i><br></h5>
+          <h5 class="text-center">Free WiFi</h5>
           <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
     </div>
+</div>
   
 
     <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
-    
-          <h5 class="text-center"><i class="fas fa-broom fa-lg"></i><br>Daily Housekeeping</h5>
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
+    	<h5 class="text-center mb-3"><i class="fas fa-broom fa-lg"></i><br></h5>
+          <h5 class="text-center">Daily Housekeeping</h5>
           <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
     </div>
+</div>
 
         <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
-    
-          <h5 class="text-center"><i class="fas fa-utensils fa-lg"></i><br>In-Room Dining Service</h5>
+        	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
+    <h5 class="text-center mb-3"><i class="fas fa-utensils fa-lg"></i><br></h5>
+          <h5 class="text-center">In-Room Dining Service</h5>
           <p class="text-center text-muted">I'm a paragraph. Click here to add your own text and edit me.</p>
     </div>
+</div>
 
         
   </div>
@@ -500,19 +510,19 @@
   <div class="row">
     
     <div class="col-12 col-md-4 col-xl-4 col-xxl-4">
-      <figure>
+      <figure data-aos="zoom-in-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
         <img src="image/g1.jpg" class="img-fluid gallery-image">
       </figure>    
     </div>
 
     <div class="col-12 col-md-4 col-xl-4 col-xxl-4">
-      <figure>
+      <figure data-aos="zoom-in-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
         <img src="image/g2.jpg" class="img-fluid gallery-image">
       </figure>    
     </div>
 
     <div class="col-12 col-md-4 col-xl-4 col-xxl-4">
-      <figure>
+      <figure data-aos="zoom-in-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
         <img src="image/g3.jpg" class="img-fluid gallery-image">
       </figure>    
     </div>
@@ -529,34 +539,40 @@
   <div class="row">
     
     <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
           <h5 class="text-center mb-3">Wineries Tour</h5>
-          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p></div>
     </div>
 
     <div class="col-12 col-md-4 col-xl-4 col-xxl-4 g-5">
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
           <h5 class="text-center mb-3">Cultural Sites</h5>
-          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>     
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>    </div> 
     </div>
 
     <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
           <h5 class="text-center mb-3">Market Tour </h5>
-          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p></div>
 
     </div>
 
     <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
           <h5 class="text-center mb-3">Wineries Tour</h5>
-          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p></div>
     </div>
 
     <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
           <h5 class="text-center mb-3">Leisure Activities</h5>
-          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p></div>
     </div>
 
     <div class="col-10 col-md-4 col-xl-4 col-xxl-4 g-5 mx-auto">
+    	<div data-aos="slide-up" data-aos-duration="4000" data-aos-offset="300"data-aos-once="true">
           <h5 class="text-center mb-3">Birds Safari</h5>
-          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p>
+          <p class="text-muted">I'm a paragraph. Click here to add your own text and edit me.<p></div>
     </div>
   
   </div>
@@ -631,11 +647,6 @@
       <div class="col-sm-4 my-3">
         <input type="text" class="form-control" placeholder="Email*" aria-label="State">
       </div>
-    
-       <div class="col-sm-8 my-3">
-           <input type="text" class="form-control" id="exampleInputEmail1"placeholder="Message" aria-describedby="emailHelp">
-        </div>
-      
       <div class="form-floating col-sm-8 my-3">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
         <label for="floatingTextarea2">Message</label>
@@ -659,7 +670,15 @@
     <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
   <!-- Copyright -->
-</footer>  
+</footer>
+<!--AOS-->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript">
+      AOS.init({
+          delay: 100, 
+         easing: 'ease'
+      });
+  </script>  
     <script src="https://use.fontawesome.com/b7bf328542.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
