@@ -53,6 +53,7 @@
       .navbar-brand{
         border:solid white 1px !important;
         padding: 10px;
+        border-radius: 5%;
       }
 
       .navbar-brand:hover{
@@ -323,7 +324,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-center active" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-center text-uppercase active mx-4" aria-current="page" href="#">Home</a>
         </li>
         
         <li class="nav-item">
@@ -375,12 +376,12 @@
     <form class="row align-items-center booking-form">
   
   <div class="col-6 col-md-2 col-xl-2 mx-auto">
-    <label class="CheckIn" for="CheckIn">CheckIn</label>
+    <label class="CheckIn" for="CheckIn">Check In:</label>
     <input type="date" class="form-control" id="CheckIn" placeholder="">
   </div>
   
   <div class="col-6 col-md-2 col-xl-2  mx-auto">
-    <label class="" for="CheckOut">CheckOut</label>
+    <label class="" for="CheckOut">Check Out:</label>
     <div class="input-group">
       <div class="input-group"></div>
       <input type="date" class="form-control" id="CheckOut" placeholder="">
@@ -388,13 +389,13 @@
   </div>
 
   <div class="col-6 col-md-2 col-xl-2  mx-auto">
-    <label class="" for="adult">adult's</label>
-    <input type="number" name="adults" id="adults" class="form-control">
+    <label class="" for="adult">Adult's:</label>
+    <input type="number" name="adults" id="adults" min="0" class="form-control">
   </div>
 
     <div class="col-6 col-md-2 col-xl-2  mx-auto">
-    	<label class="" for="adult">kid's</label>
-    	<input type="number" name="kids" id="kids" class="form-control">
+    	<label class="" for="adult">Kid's:</label>
+    	<input type="number" name="kids" id="kids" min="0" class="form-control">
   </div>
 
   <div class="col-auto mx-auto">
@@ -632,17 +633,20 @@
   <form class="">
     <div class="row gx-3 ">
       <div class="col-sm-4 my-3">
-        <input type="text" class="form-control" placeholder="Name*" aria-label="City">
+        <input type="text" class="form-control" placeholder="Name*">
       </div>
       <div class="col-sm-4 my-3">
-        <input type="text" class="form-control" placeholder="Email*" aria-label="State">
+        <input type="text" class="form-control" placeholder="Email*">
+      </div>
+      <div class="col-sm-8">
+      	<input type="text" name="subject" placeholder="Subject" class="form-control">
       </div>
       <div class="form-floating col-sm-8 my-3">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
         <label for="floatingTextarea2">Message</label>
       </div>
       <div>
-      <button type="submit" class="btn btn-dark form-button" >Send</button>
+      <button type="submit" class="btn btn-dark form-button btn-lg" >Send</button>
       </div>
     </div>
   </form>
